@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="20G165" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Tbl_Books" representedClassName="Tbl_Books" syncable="YES" codeGenerationType="class">
+        <attribute name="author_name" optional="YES" attributeType="String"/>
+        <attribute name="book_desc" optional="YES" attributeType="String"/>
+        <attribute name="book_id" optional="YES" attributeType="String"/>
+        <attribute name="book_name" optional="YES" attributeType="String"/>
+        <relationship name="book_images" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Tbl_Images"/>
+    </entity>
+    <entity name="Tbl_Images" representedClassName="Tbl_Images" syncable="YES" codeGenerationType="class">
+        <attribute name="b_id" optional="YES" attributeType="String"/>
+        <attribute name="image_id" optional="YES" attributeType="String"/>
+        <attribute name="img_url" optional="YES" attributeType="String"/>
+        <relationship name="book" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Tbl_Books"/>
+    </entity>
+    <elements>
+        <element name="Tbl_Books" positionX="-365.321044921875" positionY="-46.08258056640625" width="128" height="104"/>
+        <element name="Tbl_Images" positionX="-164.941650390625" positionY="-22.642578125" width="128" height="89"/>
+    </elements>
+</model>

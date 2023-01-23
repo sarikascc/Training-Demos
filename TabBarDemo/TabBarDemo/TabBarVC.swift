@@ -32,8 +32,9 @@ class TabBarVC: UITabBarController {
         vc2.tabBarItem = item2
         vc3.tabBarItem = item3
         
-        self.viewControllers = [vc1, vc2,vc3]
         self.selectedIndex = 1
+        self.viewControllers = [vc1, vc2,vc3]
+        
         
     }
 
